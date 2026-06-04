@@ -10,7 +10,30 @@
     "hero": {
       "title": "Definiendo el Sonido <modern>Moderno</modern>.",
       "description": "Artista de música electrónica que empuja los límites del sonido y la interpretación a través de la exploración sónica innovadora y la visión creativa.",
-      "tagline": "Cada paso cuenta una historia y cada beat crea una experiencia, mientras el cuerpo, como lienzo en constante transformación, encarna una ancestralidad poderosa hecha arte con espíritu."
+      "tagline": "Cada paso cuenta una historia y cada beat crea una experiencia, mientras el cuerpo, como lienzo en constante transformación, encarna una ancestralidad poderosa hecha arte con espíritu.",
+      "slides": {
+        "slide1": {
+          "title": {
+            "line1": "ARTE CON",
+            "line2": "PASION"
+          },
+          "quote": "Cada paso cuenta una historia, cada beat crea una experiencia."
+        },
+        "slide2": {
+          "title": {
+            "line1": "ARTE QUE",
+            "line2": "TRANSFORMA"
+          },
+          "quote": "El cuerpo es un lienzo en constante transformación."
+        },
+        "slide3": {
+          "title": {
+            "line1": "ARTE",
+            "line2": "NEGRO"
+          },
+          "quote": "Ancestralidad poderosa, arte con espíritu."
+        }
+      }
     },
     "buttons": {
       "exploreWorks": "Explorar Trabajos",

@@ -10,7 +10,30 @@
     "hero": {
       "title": "Defining <modern>Modern</modern> Sound.",
       "description": "Electronic music artist pushing the boundaries of sound and performance through innovative sonic exploration and creative vision.",
-      "tagline": "Every step tells a story and every beat creates an experience, while the body, as a canvas in constant transformation, embodies a powerful ancestry made art with spirit."
+      "tagline": "Every step tells a story and every beat creates an experience, while the body, as a canvas in constant transformation, embodies a powerful ancestry made art with spirit.",
+      "slides": {
+        "slide1": {
+          "title": {
+            "line1": "ART WITH",
+            "line2": "PASSION"
+          },
+          "quote": "Every step tells a story, every beat creates an experience."
+        },
+        "slide2": {
+          "title": {
+            "line1": "ART THAT",
+            "line2": "TRANSFORMS"
+          },
+          "quote": "The body is a canvas in constant transformation."
+        },
+        "slide3": {
+          "title": {
+            "line1": "BLACK",
+            "line2": "ART"
+          },
+          "quote": "Powerful ancestry, art with spirit."
+        }
+      }
     },
     "buttons": {
       "exploreWorks": "Explore Works",
