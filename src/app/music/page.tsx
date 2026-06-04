@@ -1,11 +1,11 @@
 'use client';
 
-import { useState } from 'react';
 import Navbar from '@/components/ui/navbar';
+import AudioPlayer from '@/components/ui/audio-player';
 import { useTranslations } from 'next-intl';
+import { MIXES, EVENTS, SOCIAL_PLATFORMS } from '@/constants/music';
 
 export default function MusicPage() {
-  const [isPlaying, setIsPlaying] = useState(false);
   const t = useTranslations('music');
 
   return (
@@ -25,58 +25,10 @@ export default function MusicPage() {
               {t('hero.description')}
             </p>
 
-            {/* Featured Audio Player */}
-            <div className="glass rounded-2xl p-8 mb-12">
-              <div className="flex items-center justify-between mb-6">
-                <div>
-                  <h3 className="text-2xl font-bold text-slate-100 mb-2">{t('hero.latestMix')}</h3>
-                  <p className="text-slate-400">{t('hero.subtitle')}</p>
-                </div>
-                <button
-                  onClick={() => setIsPlaying(!isPlaying)}
-                  className="flex items-center justify-center w-16 h-16 bg-primary rounded-full text-background-dark hover:brightness-110 transition-all"
-                >
-                  <span className="material-symbols-outlined text-3xl">
-                    {isPlaying ? 'pause' : 'play_arrow'}
-                  </span>
-                </button>
-              </div>
-
-              {/* Audio Progress Bar */}
-              <div className="mb-4">
-                <div className="h-2 bg-white/10 rounded-full overflow-hidden">
-                  <div className="h-full bg-primary w-1/3 rounded-full"></div>
-                </div>
-                <div className="flex justify-between mt-2 text-xs text-slate-500">
-                  <span>2:45</span>
-                  <span>8:20</span>
-                </div>
-              </div>
-
-              {/* Player Controls */}
-              <div className="flex items-center justify-center gap-6">
-                <button className="text-slate-400 hover:text-slate-200 transition-colors">
-                  <span className="material-symbols-outlined">shuffle</span>
-                </button>
-                <button className="text-slate-400 hover:text-slate-200 transition-colors">
-                  <span className="material-symbols-outlined">skip_previous</span>
-                </button>
-                <button
-                  onClick={() => setIsPlaying(!isPlaying)}
-                  className="flex items-center justify-center w-12 h-12 bg-primary rounded-full text-background-dark hover:brightness-110 transition-all"
-                >
-                  <span className="material-symbols-outlined">
-                    {isPlaying ? 'pause' : 'play_arrow'}
-                  </span>
-                </button>
-                <button className="text-slate-400 hover:text-slate-200 transition-colors">
-                  <span className="material-symbols-outlined">skip_next</span>
-                </button>
-                <button className="text-slate-400 hover:text-slate-200 transition-colors">
-                  <span className="material-symbols-outlined">repeat</span>
-                </button>
-              </div>
-            </div>
+            <AudioPlayer
+              title={t('hero.latestMix')}
+              subtitle={t('hero.subtitle')}
+            />
           </div>
         </section>
 
@@ -90,14 +42,7 @@ export default function MusicPage() {
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                { title: "Electronic Journey", duration: "45:30", plays: "12.5K" },
-                { title: "Deep House Sessions", duration: "38:15", plays: "8.2K" },
-                { title: "Techno Warehouse", duration: "52:45", plays: "15.7K" },
-                { title: "Ambient Explorations", duration: "41:20", plays: "6.8K" },
-                { title: "Progressive Elements", duration: "48:00", plays: "9.4K" },
-                { title: "Underground Sounds", duration: "44:30", plays: "11.2K" },
-              ].map((mix, index) => (
+              {MIXES.map((mix, index) => (
                 <div key={index} className="glass rounded-xl p-6 hover:bg-white/5 transition-all cursor-pointer group">
                   <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent-bronze/20 rounded-lg mb-4 flex items-center justify-center group-hover:from-primary/30 group-hover:to-accent-bronze/30 transition-all">
                     <span className="material-symbols-outlined text-4xl text-primary">music_note</span>
@@ -123,12 +68,7 @@ export default function MusicPage() {
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {[
-                { date: "MAR 15", venue: "Club Nexus", location: "Berlin, Germany", title: "Electronic Music Festival" },
-                { date: "MAR 22", venue: "Warehouse District", location: "Amsterdam, NL", title: "Techno Underground" },
-                { date: "APR 05", venue: "Sky Lounge", location: "London, UK", title: "Progressive House Night" },
-                { date: "APR 18", venue: "Beach Club", location: "Ibiza, Spain", title: "Summer Opening Party" },
-              ].map((event, index) => (
+              {EVENTS.map((event, index) => (
                 <div key={index} className="glass rounded-xl p-6 hover:bg-white/5 transition-all">
                   <div className="flex gap-6">
                     <div className="text-center">
@@ -185,22 +125,12 @@ export default function MusicPage() {
             <h3 className="text-2xl font-bold text-slate-100 mb-8">{t('platforms.title')}</h3>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <a href="#" className="glass rounded-xl p-6 hover:bg-white/5 transition-all group">
-                <span className="material-symbols-outlined text-3xl text-primary mb-2">library_music</span>
-                <div className="text-sm font-bold">{t('platforms.mixcloud')}</div>
-              </a>
-              <a href="#" className="glass rounded-xl p-6 hover:bg-white/5 transition-all group">
-                <span className="material-symbols-outlined text-3xl text-primary mb-2">headphones</span>
-                <div className="text-sm font-bold">{t('platforms.soundcloud')}</div>
-              </a>
-              <a href="#" className="glass rounded-xl p-6 hover:bg-white/5 transition-all group">
-                <span className="material-symbols-outlined text-3xl text-primary mb-2">music_note</span>
-                <div className="text-sm font-bold">{t('platforms.spotify')}</div>
-              </a>
-              <a href="#" className="glass rounded-xl p-6 hover:bg-white/5 transition-all group">
-                <span className="material-symbols-outlined text-3xl text-primary mb-2">smart_display</span>
-                <div className="text-sm font-bold">{t('platforms.youtube')}</div>
-              </a>
+              {SOCIAL_PLATFORMS.map((platform) => (
+                <a key={platform.name} href={platform.href} className="glass rounded-xl p-6 hover:bg-white/5 transition-all group">
+                  <span className="material-symbols-outlined text-3xl text-primary mb-2">{platform.icon}</span>
+                  <div className="text-sm font-bold">{t(platform.name)}</div>
+                </a>
+              ))}
             </div>
           </div>
         </section>
