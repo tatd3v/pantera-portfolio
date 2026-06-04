@@ -1,6 +1,7 @@
 import SmoothLink from '@/components/ui/smooth-link';
+import NavLink from '@/components/ui/nav-link';
 import LanguageDropdown from '@/components/ui/language-dropdown';
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 export default function Navbar() {
   const t = useTranslations('nav');
@@ -20,18 +21,9 @@ export default function Navbar() {
             {t('music')}
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
           </SmoothLink>
-          <a className="text-sm font-semibold text-slate-300 hover:text-primary hover:scale-105 transition-all duration-300 relative group" href="#events">
-            {t('events')}
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
-          </a>
-          <a className="text-sm font-semibold text-slate-300 hover:text-primary hover:scale-105 transition-all duration-300 relative group" href="#photos">
-            {t('photos')}
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
-          </a>
-          <a className="text-sm font-semibold text-slate-300 hover:text-primary hover:scale-105 transition-all duration-300 relative group" href="#about">
-            {t('about')}
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300"></span>
-          </a>
+          <NavLink href="#events">{t('events')}</NavLink>
+          <NavLink href="#photos">{t('photos')}</NavLink>
+          <NavLink href="#about">{t('about')}</NavLink>
         </div>
         <div className="flex items-center gap-4">
           <LanguageDropdown />
