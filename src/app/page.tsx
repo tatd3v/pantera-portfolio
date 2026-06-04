@@ -1,7 +1,7 @@
 import Navbar from '@/components/ui/navbar';
 import Hero from '@/components/ui/hero';
 import SmoothLink from '@/components/ui/smooth-link';
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 export default function Home() {
   const t = useTranslations('home');
@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Navbar />
 
-      <main className="pt-20">
+      <main>
         {/* Hero Section */}
         <Hero />
 
