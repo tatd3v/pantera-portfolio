@@ -102,5 +102,12 @@
       "pressKit": "Kit de Prensa",
       "privacy": "Privacidad"
     }
+  },
+  "footer": {
+    "instagram": "Instagram",
+    "soundcloud": "SoundCloud",
+    "spotify": "Spotify",
+    "youtube": "YouTube",
+    "copyright": "© 2026 TODOS LOS DERECHOS RESERVADOS."
   }
 }
