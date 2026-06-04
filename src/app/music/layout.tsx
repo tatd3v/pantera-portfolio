@@ -1,12 +1,16 @@
-// Placeholder for public portfolio routes
-export default function PublicLayout({
+import Navbar from '@/components/ui/navbar';
+import Footer from '@/components/ui/footer';
+
+export default function MusicLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <div className="public-layout">
-      <main>{children}</main>
-    </div>
+    <>
+      <Navbar />
+      {children}
+      <Footer />
+    </>
   );
 }

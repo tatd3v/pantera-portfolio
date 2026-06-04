@@ -1,6 +1,5 @@
 'use client';
 
-import Navbar from '@/components/ui/navbar';
 import AudioPlayer from '@/components/ui/audio-player';
 import { useTranslations } from 'next-intl';
 import { MIXES, EVENTS, SOCIAL_PLATFORMS } from '@/constants/music';
@@ -9,10 +8,7 @@ export default function MusicPage() {
   const t = useTranslations('music');
 
   return (
-    <div className="min-h-screen bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
-      <Navbar />
-
-      <main className="pt-20 px-6 md:px-20 py-12">
+    <main className="min-h-screen pt-20 px-6 md:px-20 py-12">
         {/* Hero Section */}
         <section className="mb-20">
           <div className="max-w-4xl mx-auto text-center">
@@ -135,23 +131,5 @@ export default function MusicPage() {
           </div>
         </section>
       </main>
-
-      {/* Footer */}
-      <footer className="px-6 md:px-20 py-10 border-t border-primary/10 bg-background-dark text-slate-500 text-sm">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex items-center gap-4">
-<img
-              src="/logo_trans.svg"
-              alt="Pantera"
-              className="h-16 w-auto sm:h-20 md:h-24 lg:h-24" />
-            <p> 2024 {t('footer.tagline')}</p>
-          </div>
-          <div className="flex gap-8 font-bold text-xs uppercase tracking-widest">
-            <a className="hover:text-primary transition-colors" href="#">{t('footer.pressKit')}</a>
-            <a className="hover:text-primary transition-colors" href="#">{t('footer.privacy')}</a>
-          </div>
-        </div>
-      </footer>
-    </div>
   );
 }
