@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "music": "Music",
+    "events": "Events",
+    "photos": "Photos",
+    "about": "About"
+  },
+  "home": {
+    "badge": "DJ & Producer",
+    "hero": {
+      "title": "Defining <modern>Modern</modern> Sound.",
+      "description": "Electronic music artist pushing the boundaries of sound and performance through innovative sonic exploration and creative vision.",
+      "tagline": "Every step tells a story and every beat creates an experience, while the body, as a canvas in constant transformation, embodies a powerful ancestry made art with spirit."
+    },
+    "buttons": {
+      "exploreWorks": "Explore Works",
+      "getInTouch": "Get in Touch"
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "music": {
+        "title": "Music",
+        "description": "Latest releases, mixes, and sound design projects."
+      },
+      "events": {
+        "title": "Events",
+        "description": "Upcoming performances and past highlights."
+      },
+      "photos": {
+        "title": "Photos",
+        "description": "Behind the scenes and performance photography."
+      }
+    },
+    "featured": {
+      "title": "Featured Works",
+      "subtitle": "Selected moments from the archive (2020—2024)",
+      "viewArchive": "View Full Archive",
+      "latestRelease": "Latest Release",
+      "audio": "Audio",
+      "viewProject": "View Project",
+      "listen": "Listen"
+    },
+    "cta": {
+      "title": "Let's Create the <future>Future</future> Together.",
+      "description": "Available for bookings, collaborations, and creative projects.",
+      "contactStudio": "Contact Studio"
+    }
+  },
+  "music": {
+    "hero": {
+      "title": "Electronic <music>Music</music> Experience",
+      "description": "Immerse yourself in the sonic world of Pantera - where cutting-edge electronic music meets artistic innovation.",
+      "latestMix": "Latest Mix",
+      "subtitle": "Electronic Sessions Vol. 1"
+    },
+    "mixes": {
+      "title": "Latest <mixes>Mixes</mixes>",
+      "plays": "plays"
+    },
+    "events": {
+      "title": "Upcoming <events>Events</events>"
+    },
+    "contact": {
+      "title": "Get In <touch>Touch</touch>",
+      "description": "For bookings, collaborations, or press inquiries, reach out through the platforms below.",
+      "email": "Email",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp"
+    },
+    "platforms": {
+      "title": "Find My Music On",
+      "mixcloud": "Mixcloud",
+      "soundcloud": "SoundCloud",
+      "spotify": "Spotify",
+      "youtube": "YouTube"
+    },
+    "footer": {
+      "tagline": "Electronic Music Producer & DJ.",
+      "pressKit": "Press Kit",
+      "privacy": "Privacy"
+    }
+  }
+}

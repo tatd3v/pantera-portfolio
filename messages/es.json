@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "music": "Música",
+    "events": "Eventos",
+    "photos": "Fotos",
+    "about": "Acerca de"
+  },
+  "home": {
+    "badge": "DJ y Productor",
+    "hero": {
+      "title": "Definiendo el Sonido <modern>Moderno</modern>.",
+      "description": "Artista de música electrónica que empuja los límites del sonido y la interpretación a través de la exploración sónica innovadora y la visión creativa.",
+      "tagline": "Cada paso cuenta una historia y cada beat crea una experiencia, mientras el cuerpo, como lienzo en constante transformación, encarna una ancestralidad poderosa hecha arte con espíritu."
+    },
+    "buttons": {
+      "exploreWorks": "Explorar Trabajos",
+      "getInTouch": "Ponerse en Contacto"
+    },
+    "portfolio": {
+      "title": "Portafolio",
+      "music": {
+        "title": "Música",
+        "description": "Últimos lanzamientos, mezclas y proyectos de diseño de sonido."
+      },
+      "events": {
+        "title": "Eventos",
+        "description": "Próximas presentaciones y momentos destacados del pasado."
+      },
+      "photos": {
+        "title": "Fotos",
+        "description": "Detrás de escena y fotografía de presentaciones."
+      }
+    },
+    "featured": {
+      "title": "Trabajos Destacados",
+      "subtitle": "Momentos seleccionados del archivo (2020—2024)",
+      "viewArchive": "Ver Archivo Completo",
+      "latestRelease": "Último Lanzamiento",
+      "audio": "Audio",
+      "viewProject": "Ver Proyecto",
+      "listen": "Escuchar"
+    },
+    "cta": {
+      "title": "Creemos el <future>Futuro</future> Juntos.",
+      "description": "Disponible para reservas, colaboraciones y proyectos creativos.",
+      "contactStudio": "Contactar Estudio"
+    }
+  },
+  "music": {
+    "hero": {
+      "title": "Experiencia de <music>Música</music> Electrónica",
+      "description": "Sumérgete en el mundo sonoro de Pantera - donde la música electrónica de vanguardia se encuentra con la innovación artística.",
+      "latestMix": "Última Mezcla",
+      "subtitle": "Sesiones Electrónicas Vol. 1"
+    },
+    "mixes": {
+      "title": "Últimas <mixes>Mezclas</mixes>",
+      "plays": "reproducciones"
+    },
+    "events": {
+      "title": "Próximos <events>Eventos</events>"
+    },
+    "contact": {
+      "title": "Ponte en <touch>Contacto</touch>",
+      "description": "Para reservas, colaboraciones o consultas de prensa, comunícate a través de las plataformas a continuación.",
+      "email": "Correo",
+      "phone": "Teléfono",
+      "whatsapp": "WhatsApp"
+    },
+    "platforms": {
+      "title": "Encuentra Mi Música En",
+      "mixcloud": "Mixcloud",
+      "soundcloud": "SoundCloud",
+      "spotify": "Spotify",
+      "youtube": "YouTube"
+    },
+    "footer": {
+      "tagline": "Productor de Música Electrónica y DJ.",
+      "pressKit": "Kit de Prensa",
+      "privacy": "Privacidad"
+    }
+  }
+}
