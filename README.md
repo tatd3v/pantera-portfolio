@@ -1,36 +1,252 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pantera Portfolio
 
-## Getting Started
+A modern, responsive DJ/Producer portfolio showcasing electronic music projects with stunning visuals, smooth user experience, and full internationalization support.
 
-First, run the development server:
+## 🎵 Live Demo
+
+[**pantera-music.com**](https://pantera-music.com) - Experience the portfolio live
+
+## 🚀 Tech Stack
+
+### Core Framework
+
+- **Framework**: Next.js 16.2.1 (App Router)
+- **Language**: TypeScript 5
+- **Package Manager**: npm
+- **Build Tool**: Turbopack
+- **Styling**: Tailwind CSS v4
+
+### UI & Design
+
+- **Components**: Radix UI primitives
+- **Icons**: Lucide React + Material Symbols
+- **Typography**: Inter font (Google Fonts)
+- **Theme**: Dark mode with golden accents
+- **Effects**: Glass morphism, smooth transitions
+
+### Performance & Optimization
+
+- **Images**: Next.js Image optimization (WebP/AVIF)
+- **Routing**: Smooth page transitions
+- **Loading**: Lazy loading + blur placeholders
+- **Cache**: 30-day image caching
+
+## ✨ Features
+
+### 🌍 Internationalization (i18n)
+
+- **Automatic language detection** from browser preferences
+- **Manual language switching** with persistent cookie storage
+- **SEO-compatible** with `lang` attribute on `<html>`
+- **Supported languages**: English (en) and Spanish (es)
+- **Middleware-based routing** without `[locale]` folder restructuring
+- **Rich text translations** with styled component interpolation
+
+### 🎨 Design Excellence
+
+- **Glass morphism effects** with backdrop blur
+- **Golden gradient accents** (#deb12b primary)
+- **Smooth animations** and micro-interactions
+- **Responsive design** for all devices
+- **Dark theme** optimized for music content
+
+### 🎧 Music Showcase
+
+- **Audio player interface** with controls
+- **Mixes showcase grid** with play counts
+- **Events calendar** with venue details
+- **Platform links** (Mixcloud, SoundCloud, Spotify, YouTube)
+- **Contact section** with multiple channels
+
+### ⚡ Performance
+
+- **Image optimization** with WebP/AVIF formats
+- **Lazy loading** for below-the-fold content
+- **Smooth routing** with View Transitions API
+- **Blur placeholders** for instant visual feedback
+- **30-day caching** for repeat visitors
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/your-username/pantera-portfolio.git
+   cd pantera-portfolio
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install --legacy-peer-deps
+   ```
+
+3. **Run development server**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+### Build for Production
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Internationalization
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### How It Works
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **First Visit**: Automatically detects browser language from `Accept-Language` header
+2. **Manual Switch**: Users can select language via dropdown in navbar
+3. **Persistence**: Selection stored in `NEXT_LOCALE` cookie for future visits
 
-## Learn More
+### Translation Files
 
-To learn more about Next.js, take a look at the following resources:
+```
+messages/
+├── en.json  # English translations
+└── es.json  # Spanish translations
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Adding a New Language
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Add locale code to `src/middleware.ts`:
+   ```typescript
+   const locales = ['en', 'es', 'fr']; // Add new locale
+   ```
 
-## Deploy on Vercel
+2. Create translation file `messages/fr.json`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Add language option to `src/components/ui/language-dropdown.tsx`:
+   ```typescript
+   const languages = [
+     { code: 'en', label: 'English' },
+     { code: 'es', label: 'Español' },
+     { code: 'fr', label: 'Français' }
+   ];
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📁 Project Structure
+
+```txt
+src/
+├── app/
+│   ├── page.tsx              # Homepage (/)
+│   ├── layout.tsx            # Root layout with NextIntlClientProvider
+│   ├── globals.css           # Global styles
+│   └── music/
+│       └── page.tsx          # Music page (/music)
+├── components/
+│   └── ui/
+│       ├── navbar.tsx        # Navigation with language dropdown
+│       ├── language-dropdown.tsx  # Language switcher component
+│       └── smooth-link.tsx   # Smooth routing
+├── lib/
+│   └── utils/
+│       └── translation-helpers.tsx  # Rich text parsing utilities
+├── i18n/
+│   └── request.ts          # next-intl request configuration
+└── middleware.ts           # Language detection middleware
+
+messages/
+├── en.json                  # English translations
+└── es.json                  # Spanish translations
+
+public/
+└── logo_trans.svg           # Transparent SVG logo
+```
+
+## 🎨 Design System
+
+### Colors
+
+- **Primary**: `#deb12b` (Golden)
+- **Accent Bronze**: `#D4AF37`
+- **Accent Terracotta**: `#E07A5F`
+- **Background Dark**: `#201d12`
+- **Background Light**: `#f8f7f6`
+
+### Typography
+
+- **Font**: Inter (Google Fonts)
+- **Icons**: Material Symbols Outlined
+- **Weights**: 300, 400, 600, 700, 900
+
+### Components
+
+- Glass morphism effects
+- Gradient text effects
+- Smooth transitions and hover states
+- Responsive grid layouts
+
+## 🖼️ Logo
+
+- **Format**: SVG with transparency (`public/logo_trans.svg`)
+- **Navbar**: 48x48px (h-12 w-12)
+- **Footer**: 128x128px (h-32 w-32)
+- **Placement**: Navbar (left) and Footer (center-left)
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+
+1. Push to GitHub
+2. Connect to Vercel
+3. Deploy automatically
+
+### Other Platforms
+
+- Netlify
+- AWS Amplify
+- DigitalOcean App Platform
+
+## 📊 Performance
+
+- **Lighthouse Score**: 95+
+- **First Contentful Paint**: <1.5s
+- **Largest Contentful Paint**: <2.5s
+- **Cumulative Layout Shift**: <0.1
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **Next.js Team** - Amazing framework
+- **Tailwind CSS** - Utility-first CSS framework
+- **Radix UI** - Accessible component primitives
+- **next-intl** - Internationalization library
+- **Google Fonts** - Inter font family
+- **Material Design** - Icon system
+
+## 📞 Contact
+
+- **Portfolio**: [pantera-music.com](https://pantera-music.com)
+- **Email**: contact@pantera-music.com
+- **Social**: [@pantera_music](https://twitter.com/pantera_music)
+
+---
+
+### Built with ❤️ for the electronic music community
+

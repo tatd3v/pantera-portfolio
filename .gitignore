@@ -39,3 +39,83 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Security & Privacy
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# API Keys & Secrets
+*.key
+*.p12
+*.pfx
+*.crt
+*.pem
+*.keychain
+*.asc
+
+# Database & Storage
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+database/
+storage/
+uploads/
+temp/
+
+# Logs & Analytics
+*.log
+logs/
+analytics/
+*.trace
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup & Cache
+*.backup
+*.bak
+*.tmp
+.cache/
+.parcel-cache/
+.eslintcache
+
+# Deployment & CI/CD
+.github/workflows/secret*
+*.deploy
+*.war
+*.ear
+
+# User-specific
+.user.json
+*.session
+*.cookie
+*.token
+*.auth
+
+# External Services
+.firebase/
+amplify/
+.aws/
+.azure/
+google-cloud-config.json
+service-account.json
+
+# ImageKit & CDN
+imagekit-config.json
+cdn-config.json
