@@ -1,18 +1,18 @@
-import { ReactNode } from 'react';
+import React from 'react';
 
 interface CarouselButtonProps {
   onClick: () => void;
   ariaLabel: string;
-  children: ReactNode;
+  children: React.ReactNode;
   className?: string;
 }
 
-export function CarouselButton({ 
+export const CarouselButton = React.memo(({ 
   onClick, 
   ariaLabel, 
   children, 
   className = '' 
-}: CarouselButtonProps) {
+}: CarouselButtonProps) => {
   return (
     <button
       onClick={onClick}
@@ -22,7 +22,9 @@ export function CarouselButton({
       {children}
     </button>
   );
-}
+});
+
+CarouselButton.displayName = 'CarouselButton';
 
 interface CarouselDotProps {
   isActive: boolean;
@@ -30,7 +32,7 @@ interface CarouselDotProps {
   ariaLabel: string;
 }
 
-export function CarouselDot({ isActive, onClick, ariaLabel }: CarouselDotProps) {
+export const CarouselDot = React.memo(({ isActive, onClick, ariaLabel }: CarouselDotProps) => {
   return (
     <button
       onClick={onClick}
@@ -40,4 +42,6 @@ export function CarouselDot({ isActive, onClick, ariaLabel }: CarouselDotProps) 
       aria-label={ariaLabel}
     />
   );
-}
+});
+
+CarouselDot.displayName = 'CarouselDot';

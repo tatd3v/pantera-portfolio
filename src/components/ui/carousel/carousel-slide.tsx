@@ -1,4 +1,6 @@
-import Image from 'next/image';
+// DEPRECATED: Use HeroCarouselSlide instead
+// This file is kept for backward compatibility
+import { HeroCarouselSlide } from './hero-carousel-slide';
 import { HeroSlide } from '@/constants/hero';
 
 interface CarouselSlideProps {
@@ -7,21 +9,6 @@ interface CarouselSlideProps {
 }
 
 export function CarouselSlide({ slide, isActive }: CarouselSlideProps) {
-  return (
-    <div
-      className={`absolute inset-0 transition-opacity duration-1000 ${
-        isActive ? 'opacity-100 z-10' : 'opacity-0 z-0'
-      }`}
-    >
-      <Image
-        src={slide.image}
-        alt={slide.alt}
-        fill
-        priority={isActive}
-        quality={90}
-        sizes="100vw"
-        className="object-cover grayscale brightness-75"
-      />
-    </div>
-  );
+  console.warn('CarouselSlide is deprecated. Use HeroCarouselSlide instead.');
+  return <HeroCarouselSlide slide={slide} isActive={isActive} />;
 }
