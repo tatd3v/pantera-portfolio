@@ -10,15 +10,29 @@ export default function SmoothLink({ href, children, ...props }: SmoothLinkProps
   const router = useRouter();
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    if (typeof href === 'string' && !href.startsWith('#')) {
-      e.preventDefault();
-
-      if ('startViewTransition' in document) {
-        (document as any).startViewTransition(() => {
-          router.push(href);
-        });
+    if (typeof href === 'string') {
+      if (href.startsWith('#')) {
+        e.preventDefault();
+        const targetId = href.substring(1);
+        const targetElement = document.getElementById(targetId);
+        
+        if (targetElement) {
+          targetElement.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+          });
+          window.history.pushState(null, '', href);
+        }
       } else {
-        router.push(href);
+        e.preventDefault();
+
+        if ('startViewTransition' in document) {
+          (document as any).startViewTransition(() => {
+            router.push(href);
+          });
+        } else {
+          router.push(href);
+        }
       }
     }
   };
