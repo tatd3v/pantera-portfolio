@@ -5,10 +5,7 @@ export default function Footer() {
   
   return (
     <footer className="bg-background-dark py-2 px-6 border-t border-white/5">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-        <div className="flex items-center gap-3">
-          <h2 className="text-lg font-black tracking-tighter uppercase">Pantera</h2>
-        </div>
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
         <div className="flex gap-8">
           <a href="https://www.instagram.com/pntr_g" target="_blank" rel="noopener noreferrer" className="transition-all duration-300 hover:scale-110 group">
             <img src="/icons/instagram.svg" alt={t('instagram')} className="w-20 h-16 opacity-70 group-hover:opacity-100 transition-all" />
