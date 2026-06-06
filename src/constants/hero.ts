@@ -1,6 +1,10 @@
-export const HERO_CONFIG = {
-  AUTOPLAY_INTERVAL: 5000,
-  TRANSITION_DURATION: 1000,
+import { CarouselConfig } from '@/components/ui/carousel/generic-carousel';
+
+export const HERO_CONFIG: CarouselConfig = {
+  autoPlayInterval: 5000,
+  showNavigation: true,
+  showDots: true,
+  transitionDuration: 1000,
 } as const;
 
 export interface HeroSlide {
@@ -12,6 +16,29 @@ export interface HeroSlide {
   };
   quote: string;
 }
+
+// Interface segregation - base slide interface
+export interface BaseSlide {
+  id: string;
+  type: 'image' | 'video' | 'content';
+}
+
+export interface ImageSlide extends BaseSlide {
+  type: 'image';
+  image: string;
+  alt: string;
+}
+
+export interface ContentSlide extends BaseSlide {
+  type: 'content';
+  title: {
+    line1: string;
+    line2: string;
+  };
+  quote: string;
+}
+
+export type Slide = ImageSlide | ContentSlide;
 
 export const HERO_SLIDES: HeroSlide[] = [
   {
