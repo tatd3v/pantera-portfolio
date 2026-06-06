@@ -109,5 +109,73 @@
     "spotify": "Spotify",
     "youtube": "YouTube",
     "copyright": "© 2026 ALL RIGHTS RESERVED."
+  },
+  "about": {
+    "hero": {
+      "subtitle": "DJ • Producer • Artist",
+      "title": {
+        "line1": "Rhythm drives",
+        "line2": "my art, movement",
+        "line3": "sets it free."
+      },
+      "quote": "Bridging the gap between ancestral heritage and contemporary electronic music."
+    },
+    "narrative": {
+      "sideLabel": "The Story / The Story / The Story",
+      "title": "Roots in Sound & Culture",
+      "paragraph1": "PANTERA's journey began in the vibrant underground scenes, where the power of rhythm and cultural expression converged.",
+      "highlight": "A multi-disciplinary artist exploring the intersection of electronic music, visual art, and cultural identity.",
+      "paragraph2": "By blending traditional influences with cutting-edge production techniques, PANTERA crafts sonic experiences where heritage meets innovation."
+    },
+    "mission": {
+      "quote": {
+        "text1": "Music is not just entertainment, but a",
+        "highlight": "vital tool",
+        "text2": "for cultural expression and community connection."
+      },
+      "values": {
+        "value1": {
+          "label": "Authenticity",
+          "title": "Cultural Authenticity",
+          "description": "Honoring the sounds and stories passed down through generations."
+        },
+        "value2": {
+          "label": "Innovation",
+          "title": "Creative Innovation",
+          "description": "Pushing boundaries while respecting the foundations of the craft."
+        },
+        "value3": {
+          "label": "Community",
+          "title": "Community Building",
+          "description": "Creating spaces where diverse voices and sounds can thrive together."
+        }
+      }
+    },
+    "timeline": {
+      "title": "Evolution",
+      "subtitle": "Musical Journey",
+      "events": {
+        "event1": {
+          "year": "24",
+          "title": "International Tours",
+          "description": "Performing across major festivals and underground venues worldwide."
+        },
+        "event2": {
+          "year": "22",
+          "title": "Studio Productions",
+          "description": "Released breakthrough EP blending Afro-Latin rhythms with techno."
+        },
+        "event3": {
+          "year": "20",
+          "title": "Residency Programs",
+          "description": "Established monthly residency at iconic underground venues."
+        },
+        "event4": {
+          "year": "18",
+          "title": "First Releases",
+          "description": "Debut tracks featured on prominent electronic music platforms."
+        }
+      }
+    }
   }
 }

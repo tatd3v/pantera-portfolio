@@ -3,10 +3,10 @@
     "music": "Música",
     "events": "Eventos",
     "photos": "Fotos",
-    "about": "Acerca de"
+    "about": "Sobre mí"
   },
   "home": {
-    "badge": "DJ y Productor",
+    "badge": "DJ y Productora",
     "hero": {
       "title": "Definiendo el Sonido <modern>Moderno</modern>.",
       "description": "Artista de música electrónica que empuja los límites del sonido y la interpretación a través de la exploración sónica innovadora y la visión creativa.",
@@ -109,5 +109,73 @@
     "spotify": "Spotify",
     "youtube": "YouTube",
     "copyright": "© 2026 TODOS LOS DERECHOS RESERVADOS."
+  },
+  "about": {
+    "hero": {
+      "subtitle": "DJ • Productora • Artista",
+      "title": {
+        "line1": "El ritmo impulsa",
+        "line2": "mi arte, el",
+        "line3": "movimiento lo libera."
+      },
+      "quote": "Cerrando la brecha entre la herencia ancestral y la música electrónica contemporánea."
+    },
+    "narrative": {
+      "sideLabel": "La Historia / La Historia / La Historia",
+      "title": "Raíces en Sonido y Cultura",
+      "paragraph1": "El viaje de PANTERA comenzó en las vibrantes escenas underground, donde el poder del ritmo y la expresión cultural convergieron.",
+      "highlight": "Una artista multidisciplinaria explorando la intersección de la música electrónica, el arte visual y la identidad cultural.",
+      "paragraph2": "Mezclando influencias tradicionales con técnicas de producción de vanguardia, PANTERA crea experiencias sónicas donde la herencia se encuentra con la innovación."
+    },
+    "mission": {
+      "quote": {
+        "text1": "La música no es solo entretenimiento, sino una",
+        "highlight": "herramienta vital",
+        "text2": "para la expresión cultural y la conexión comunitaria."
+      },
+      "values": {
+        "value1": {
+          "label": "Autenticidad",
+          "title": "Autenticidad Cultural",
+          "description": "Honrando los sonidos e historias transmitidas a través de generaciones."
+        },
+        "value2": {
+          "label": "Innovación",
+          "title": "Innovación Creativa",
+          "description": "Empujando límites mientras se respetan las bases del oficio."
+        },
+        "value3": {
+          "label": "Comunidad",
+          "title": "Construcción Comunitaria",
+          "description": "Creando espacios donde diversas voces y sonidos puedan prosperar juntos."
+        }
+      }
+    },
+    "timeline": {
+      "title": "Evolución",
+      "subtitle": "Trayectoria Musical",
+      "events": {
+        "event1": {
+          "year": "24",
+          "title": "Tours Internacionales",
+          "description": "Presentándose en festivales importantes y venues underground en todo el mundo."
+        },
+        "event2": {
+          "year": "22",
+          "title": "Producciones de Estudio",
+          "description": "Lanzó EP revolucionario mezclando ritmos afro-latinos con techno."
+        },
+        "event3": {
+          "year": "20",
+          "title": "Programas de Residencia",
+          "description": "Estableció residencia mensual en icónicos venues underground."
+        },
+        "event4": {
+          "year": "18",
+          "title": "Primeros Lanzamientos",
+          "description": "Tracks debut presentados en plataformas prominentes de música electrónica."
+        }
+      }
+    }
   }
 }
