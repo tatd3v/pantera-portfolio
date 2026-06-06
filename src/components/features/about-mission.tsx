@@ -16,38 +16,37 @@ export default function AboutMission() {
             "{t('quote.text1')} <span className="text-primary">{t('quote.highlight')}</span> {t('quote.text2')}"
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-primary/20">
-          <div className="p-12 border-b md:border-b-0 md:border-r border-primary/20 group hover:bg-primary/5 transition-colors">
-            <span className="text-primary text-xs font-bold tracking-[0.3em] uppercase mb-8 block">
-              01 / {t('values.value1.label')}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="p-8 border border-primary/20 group hover:bg-primary/5 transition-colors">
+            <span className="text-primary text-xs font-bold tracking-[0.3em] uppercase mb-6 block">
+              01 / {t('reflections.reflection1.title')}
             </span>
-            <h4 className="text-2xl font-bold mb-4 text-white">
-              {t('values.value1.title')}
-            </h4>
-            <p className="text-slate-500 group-hover:text-slate-300 transition-colors">
-              {t('values.value1.description')}
+            <p className="text-slate-300 leading-relaxed">
+              {t('reflections.reflection1.text')}
             </p>
           </div>
-          <div className="p-12 border-b md:border-b-0 md:border-r border-primary/20 group hover:bg-primary/5 transition-colors">
-            <span className="text-primary text-xs font-bold tracking-[0.3em] uppercase mb-8 block">
-              02 / {t('values.value2.label')}
+          <div className="p-8 border border-primary/20 group hover:bg-primary/5 transition-colors">
+            <span className="text-primary text-xs font-bold tracking-[0.3em] uppercase mb-6 block">
+              02 / {t('reflections.reflection2.title')}
             </span>
-            <h4 className="text-2xl font-bold mb-4 text-white">
-              {t('values.value2.title')}
-            </h4>
-            <p className="text-slate-500 group-hover:text-slate-300 transition-colors">
-              {t('values.value2.description')}
+            <p className="text-slate-300 leading-relaxed">
+              {t('reflections.reflection2.text')}
             </p>
           </div>
-          <div className="p-12 group hover:bg-primary/5 transition-colors">
-            <span className="text-primary text-xs font-bold tracking-[0.3em] uppercase mb-8 block">
-              03 / {t('values.value3.label')}
+          <div className="p-8 border border-primary/20 group hover:bg-primary/5 transition-colors">
+            <span className="text-primary text-xs font-bold tracking-[0.3em] uppercase mb-6 block">
+              03 / {t('reflections.reflection3.title')}
             </span>
-            <h4 className="text-2xl font-bold mb-4 text-white">
-              {t('values.value3.title')}
-            </h4>
-            <p className="text-slate-500 group-hover:text-slate-300 transition-colors">
-              {t('values.value3.description')}
+            <p className="text-slate-300 leading-relaxed">
+              {t('reflections.reflection3.text')}
+            </p>
+          </div>
+          <div className="p-8 border border-primary/20 group hover:bg-primary/5 transition-colors">
+            <span className="text-primary text-xs font-bold tracking-[0.3em] uppercase mb-6 block">
+              04 / {t('reflections.reflection4.title')}
+            </span>
+            <p className="text-slate-300 leading-relaxed">
+              {t('reflections.reflection4.text')}
             </p>
           </div>
         </div>
