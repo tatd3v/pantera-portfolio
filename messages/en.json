@@ -114,9 +114,10 @@
     "hero": {
       "subtitle": "DJ • Producer • Artist",
       "title": {
-        "line1": "Rhythm drives",
-        "line2": "my art, movement",
-        "line3": "sets it free."
+        "line1": "Rhythm",
+        "line2": "drives my art,",
+        "line3": "movement",
+        "line4": "sets it free."
       },
       "quote": "Bridging the gap between ancestral heritage and contemporary electronic music."
     },

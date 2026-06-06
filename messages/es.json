@@ -114,9 +114,10 @@
     "hero": {
       "subtitle": "DJ • Productora • Artista",
       "title": {
-        "line1": "El ritmo impulsa",
-        "line2": "mi arte, el",
-        "line3": "movimiento lo libera."
+        "line1": "El ritmo",
+        "line2": "impulsa mi arte,",
+        "line3": "el movimiento",
+        "line4": "lo libera."
       },
       "quote": "Cerrando la brecha entre la herencia ancestral y la música electrónica contemporánea."
     },
