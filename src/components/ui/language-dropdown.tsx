@@ -1,6 +1,7 @@
 'use client';
 
 import { useLocale } from 'next-intl';
+import { useRouter } from '@/i18n/routing';
 import { useState, useTransition, useRef, useEffect } from 'react';
 
 const languages = [
@@ -10,6 +11,7 @@ const languages = [
 
 export default function LanguageDropdown() {
   const locale = useLocale();
+  const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -18,10 +20,11 @@ export default function LanguageDropdown() {
 
   const switchLanguage = (newLocale: string) => {
     startTransition(() => {
-      document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000`;
-      window.location.reload();
+      const currentPath = window.location.pathname;
+      const newPath = currentPath.replace(`/${locale}`, `/${newLocale}`);
+      router.push(newPath);
+      setIsOpen(false);
     });
-    setIsOpen(false);
   };
 
   useEffect(() => {
