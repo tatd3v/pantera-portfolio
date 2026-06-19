@@ -1,7 +1,6 @@
 'use client';
 
-import { useLocale } from 'next-intl';
-import { useRouter, usePathname } from '@/i18n/routing';
+import { useRouter } from 'next/navigation';
 import { useState, useTransition, useRef, useEffect } from 'react';
 
 const languages = [
@@ -10,18 +9,30 @@ const languages = [
 ];
 
 export default function LanguageDropdown() {
-  const locale = useLocale();
   const router = useRouter();
-  const pathname = usePathname();
   const [isPending, startTransition] = useTransition();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Detectar locale desde la URL actual del navegador
+  const [locale, setLocale] = useState<string>('en');
+  
+  useEffect(() => {
+    const currentPath = window.location.pathname;
+    const detectedLocale = currentPath.split('/')[1];
+    if (detectedLocale === 'en' || detectedLocale === 'es') {
+      setLocale(detectedLocale);
+    }
+  }, []);
 
   const currentLanguage = languages.find(lang => lang.code === locale);
 
   const switchLanguage = (newLocale: string) => {
     startTransition(() => {
-      router.replace(pathname, { locale: newLocale });
+      const currentPath = window.location.pathname;
+      // Reemplazar el locale en la ruta: /es/about -> /en/about
+      const newPath = currentPath.replace(`/${locale}`, `/${newLocale}`);
+      router.push(newPath);
       setIsOpen(false);
     });
   };
@@ -58,10 +69,10 @@ export default function LanguageDropdown() {
               <button
                 key={lang.code}
                 onClick={() => switchLanguage(lang.code)}
-                disabled={isPending}
+                disabled={isPending || locale === lang.code}
                 className={`px-6 py-3 flex items-center justify-between text-xs uppercase tracking-widest transition-colors ${
                   locale === lang.code
-                    ? 'text-primary bg-white/5'
+                    ? 'text-primary bg-white/5 cursor-not-allowed opacity-75'
                     : 'text-slate-300 hover:text-primary hover:bg-white/5'
                 }`}
               >
