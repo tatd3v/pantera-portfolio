@@ -1,3 +1,5 @@
+'use client';
+
 import SmoothLink from '@/components/ui/smooth-link';
 import LanguageDropdown from '@/components/ui/language-dropdown';
 import { useTranslations } from 'next-intl';
