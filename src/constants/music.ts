@@ -29,7 +29,7 @@ export const EVENTS: Event[] = [
 
 export const SOCIAL_PLATFORMS = [
   { name: 'platforms.mixcloud', icon: 'library_music', href: '#' },
-  { name: 'platforms.soundcloud', icon: 'headphones', href: '#' },
+  { name: 'platforms.soundcloud', icon: 'headphones', href: 'https://on.soundcloud.com/QBzbEgcke8nXGPYQl4' },
   { name: 'platforms.spotify', icon: 'music_note', href: '#' },
-  { name: 'platforms.youtube', icon: 'smart_display', href: '#' },
+  { name: 'platforms.youtube', icon: 'smart_display', href: 'https://www.youtube.com/@panteragodoy' },
 ] as const;
