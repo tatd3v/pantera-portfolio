@@ -11,10 +11,14 @@ const inter = Inter({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "PANTERA | Multi-Disciplinary Artist",
-  description: "DJ, Producer, and Creative Visionary",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const messages = await getMessages();
+  
+  return {
+    title: messages.metadata?.title || "PANTERA",
+    description: messages.metadata?.description || "DJ, Producer, and Creative Visionary",
+  };
+}
 
 export default async function RootLayout({
   children,
