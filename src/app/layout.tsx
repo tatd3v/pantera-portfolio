@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages, getLocale} from 'next-intl/server';
 import "./globals.css";
 
 const inter = Inter({
@@ -11,26 +9,18 @@ const inter = Inter({
   display: "swap",
 });
 
-export async function generateMetadata(): Promise<Metadata> {
-  const messages = await getMessages();
-  
-  return {
-    title: messages.metadata?.title || "PANTERA",
-    description: messages.metadata?.description || "DJ, Producer, and Creative Visionary",
-  };
-}
+export const metadata: Metadata = {
+  title: "PANTERA",
+  description: "DJ, Producer, and Creative Visionary",
+};
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const locale = await getLocale();
-  const messages = await getMessages();
-
   return (
     <html
-      lang={locale}
       className={`${inter.variable} dark h-full antialiased`}
       data-scroll-behavior="smooth"
       suppressHydrationWarning
@@ -66,9 +56,7 @@ export default async function RootLayout({
         />
       </head>
       <body className="min-h-full bg-background-dark text-slate-100 selection:bg-primary/30" suppressHydrationWarning={true}>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        {children}
       </body>
     </html>
   );
