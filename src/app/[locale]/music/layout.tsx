@@ -1,6 +1,3 @@
-import Navbar from '@/components/ui/navbar';
-import Footer from '@/components/ui/footer';
-
 export default function MusicLayout({
   children,
 }: {
@@ -8,9 +5,7 @@ export default function MusicLayout({
 }) {
   return (
     <>
-      <Navbar />
       {children}
-      <Footer />
     </>
   );
 }
