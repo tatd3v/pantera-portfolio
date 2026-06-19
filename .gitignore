@@ -86,6 +86,7 @@ analytics/
 .Trashes
 ehthumbs.db
 Thumbs.db
+*.Zone.Identifier
 
 # Backup & Cache
 *.backup
