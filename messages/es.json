@@ -76,6 +76,16 @@
       "latestMix": "Última Mezcla",
       "subtitle": "Sesiones Electrónicas Vol. 1"
     },
+    "sections": {
+      "spotify": {
+        "title": "Spotify Profile",
+        "description": "Escucha mis últimos lanzamientos y sigue mi perfil en Spotify"
+      },
+      "soundcloud": {
+        "title": "SoundCloud Profile", 
+        "description": "Explora mis mezclas exclusivas y contenido original en SoundCloud"
+      }
+    },
     "mixes": {
       "title": "Últimas <mixes>Mezclas</mixes>",
       "plays": "reproducciones"
@@ -96,7 +106,16 @@
       "soundcloud": "SoundCloud",
       "spotify": "Spotify",
       "youtube": "YouTube"
+    },
+    "footer": {
+      "tagline": "Productora de Música Electrónica & DJ.",
+      "pressKit": "Kit de Prensa",
+      "privacy": "Privacidad"
     }
+  },
+  "metadata": {
+    "title": "PANTERA",
+    "description": "DJ, Productora y Visionaria Creativa"
   },
   "footer": {
     "instagram": "Instagram",
@@ -129,22 +148,21 @@
         "highlight": "la fusión",
         "text2": "es el componente que emulsiona."
       },
-      "reflections": {
-        "reflection1": {
-          "title": "Raíces",
-          "text": "Nací y crecí en la sabana cundiboyacense colombiana, por ende mis creaciones, siempre son producto de discrepancias existenciales."
+      "values": {
+        "value1": {
+          "label": "Autenticidad",
+          "title": "Autenticidad Cultural",
+          "description": "Honrando los sonidos e historias transmitidos a través de generaciones."
         },
-        "reflection2": {
-          "title": "Colaboración",
-          "text": "Crear en conjunto, es una de mis pasiones, la lluvia de ideas, acompañada de debates y discusiones entorno a la pertinencia de la acción, es algo que me motiva constantemente."
+        "value2": {
+          "label": "Innovación",
+          "title": "Innovación Creativa",
+          "description": "Empujando límites mientras se respetan los fundamentos del arte."
         },
-        "reflection3": {
-          "title": "Tránsito",
-          "text": "Mi transito siempre esta presente en mis composiciones o relaciones con el arte, es una factor importante en mi experiencia artística, mi diario, mi existir."
-        },
-        "reflection4": {
-          "title": "Ancestralidad",
-          "text": "Para mí, la ancestralidad contiene los ingredientes fundamentales para la conexión con mis practicas y reflexiones. es el hilo que conecta cada una de las piezas que me componen!"
+        "value3": {
+          "label": "Comunidad",
+          "title": "Construcción Comunitaria",
+          "description": "Creando espacios donde voces y sonidos diversos pueden prosperar juntos."
         }
       }
     },

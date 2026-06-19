@@ -76,6 +76,16 @@
       "latestMix": "Latest Mix",
       "subtitle": "Electronic Sessions Vol. 1"
     },
+    "sections": {
+      "spotify": {
+        "title": "Spotify Profile",
+        "description": "Listen to my latest releases and follow my profile on Spotify"
+      },
+      "soundcloud": {
+        "title": "SoundCloud Profile",
+        "description": "Explore my exclusive mixes and original content on SoundCloud"
+      }
+    },
     "mixes": {
       "title": "Latest <mixes>Mixes</mixes>",
       "plays": "plays"
@@ -102,6 +112,10 @@
       "pressKit": "Press Kit",
       "privacy": "Privacy"
     }
+  },
+  "metadata": {
+    "title": "PANTERA",
+    "description": "DJ, Producer, and Creative Visionary"
   },
   "footer": {
     "instagram": "Instagram",
