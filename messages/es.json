@@ -164,6 +164,24 @@
           "title": "Construcción Comunitaria",
           "description": "Creando espacios donde voces y sonidos diversos pueden prosperar juntos."
         }
+      },
+      "reflections": {
+        "reflection1": {
+          "title": "Patrimonio Cultural",
+          "text": "Honrando ritmos ancestrales mientras creamos paisajes sonoros contemporáneos que unen generaciones."
+        },
+        "reflection2": {
+          "title": "Libertad Creativa",
+          "text": "Explorando los límites de la música electrónica a través de producción experimental y técnicas innovadoras."
+        },
+        "reflection3": {
+          "title": "Conexión Comunitaria",
+          "text": "Construyendo puentes entre culturas a través de experiencias musicales compartidas y expresión colaborativa."
+        },
+        "reflection4": {
+          "title": "Evolución Artística",
+          "text": "Evolucionando continuamente como artista mientras me mantengo fiel a los valores centrales que impulsan la expresión creativa."
+        }
       }
     },
     "timeline": {

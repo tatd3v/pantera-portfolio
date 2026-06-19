@@ -164,6 +164,24 @@
           "title": "Community Building",
           "description": "Creating spaces where diverse voices and sounds can thrive together."
         }
+      },
+      "reflections": {
+        "reflection1": {
+          "title": "Cultural Heritage",
+          "text": "Honoring ancestral rhythms while creating contemporary soundscapes that bridge generations."
+        },
+        "reflection2": {
+          "title": "Creative Freedom",
+          "text": "Exploring the boundaries of electronic music through experimental production and innovative techniques."
+        },
+        "reflection3": {
+          "title": "Community Connection",
+          "text": "Building bridges between cultures through shared musical experiences and collaborative expression."
+        },
+        "reflection4": {
+          "title": "Artistic Evolution",
+          "text": "Continuously evolving as an artist while staying true to the core values that drive creative expression."
+        }
       }
     },
     "timeline": {
