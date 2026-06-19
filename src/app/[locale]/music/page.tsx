@@ -7,17 +7,6 @@ export default function MusicPage() {
 
   return (
     <main className="min-h-screen pt-20 px-6 md:px-20 py-12">
-      {/* Hero Section */}
-      <section className="mb-20">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-black leading-none tracking-tighter uppercase mb-6">
-            BEATS,<br/>
-            <span className="text-gradient-gold italic">PASIONES,</span><br/>
-            ARMONÍAS
-          </h1>
-        </div>
-      </section>
-
       {/* Spotify Profile Section */}
       <section className="mb-20">
         <div className="max-w-4xl mx-auto">
